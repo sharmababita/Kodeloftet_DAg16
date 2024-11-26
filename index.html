@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!--
       Need a visual blank slate?
       Remove all code in `styles.css`!
     -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="/" aria-current="page">Home</a>
+    <a href="/page2.html">Other page</a>
+  </nav>
+  <main>
 
     <!--
       Oppgave1:
@@ -25,12 +27,39 @@
       3. Lag et input.felt som tar i mot alder
       4. Lag et input-felt som tar i mot en avkrysnsing 
       -->
-      <input types="text" name="" id="" placeholder=" Babita ">
-      <input types="number" name="" id="" placeholder=" Sharma">
-      <input type="checkbox" name="" id="" placeholder=" Alder">
-      <input type="button" value="50">
-      </main>
-      <footer>
-        <>Laget av Babita</p>
-  </body>
+    <form class="flexCol">
+      <label for="firstName">
+        Skriv ditt fornavn
+      <input types="text" 
+      name="firstName" 
+      id="" placeholder=" Babita ">
+      </label>
+
+      <label class="flexCol" for=" lastName">
+        Skriv ditt etternavn
+        <input types="text" name="lastName" id="" placeholder=" Sharma">
+      </label>
+
+      <label class="flexCol" for="age">
+        Skriv in din alder
+        <input types="number" name="age" id="" placeholder=" 70"> </label>
+      <label class="flexCol" for="termsAndConditions" id="">
+      </label>
+      Har du lest bruker rettningslinjene
+      <!--Opgave 2:
+      1. Gi hvert input-element et label-elemet
+      -->
+
+      <input class="inputSize" type="checkbox" name="termsAndConditions" id="termsAndConditions" </label>
+
+      <button class="buttonSize" i
+      id="submitButton"> 
+    </button>button>Send inn skjema</button>
+  </label>
+    </form>
+  </main>
+  <footer>
+    <>Laget av Babita</p>
+</body>
+
 </html>
